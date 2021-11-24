@@ -14,12 +14,41 @@ public class Item {
 
     public Item(String name, String value, String serialNumber) {
         this.name = name;
-        this.value = new Double(value);
+        this.value = new Double (value);
         this.serialNumber = serialNumber;
 
     }
 
     // create get and set methods for each attribute
+
+    public String getName() {
+        return name;
+
+    }
+
+    public void setName(String name) {
+        this.name = name;
+
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+
+    }
+
+    public void setSerialNumber() {
+        this.serialNumber = serialNumber;
+
+    }
+
+    public Double getValue() {
+        return value;
+
+    }
+
+    public void setValue() {
+        this.value = Double.parseDouble(String.valueOf(value));
+    }
 
 
 }
